@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="L'Échappée d'Eygalières - Informations pratiques pour votre séjour : accès, parking, consignes, contact, randonnées, restaurants et lieux à visiter autour d'Eygalières.">
+  <title>L'Échappée d'Eygalières</title>
+  <style>
+    :root{
+      --olive:#66734c;--olive-dark:#374022;--cream:#f7f1e7;--stone:#e6d8c3;--sand:#c8aa78;--gold:#c9a45c;--text:#2c261f;--muted:#6e6256;--white:#fffaf1;--line:rgba(44,38,31,.13);--shadow:0 20px 55px rgba(61,48,35,.18);--radius:26px;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--cream),#efe3d0)}
+    .hero{min-height:78vh;display:flex;align-items:flex-end;justify-content:center;padding:28px;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.62)),url('assets/hero.jpg') center/cover no-repeat;color:white;text-align:center}
+    .hero-card{max-width:840px;padding:36px 30px;border:1px solid rgba(255,255,255,.28);border-radius:34px;background:rgba(38,34,28,.38);backdrop-filter:blur(5px);box-shadow:0 22px 70px rgba(0,0,0,.28)}
+    .kicker{text-transform:uppercase;letter-spacing:.25em;font-size:12px;margin:0 0 10px;color:rgba(255,255,255,.85)}h1{font-family:Georgia,'Times New Roman',serif;font-size:52px;line-height:1.03;margin:0;color:#fff8ea}.tagline{font-size:19px;margin:14px 0 0;color:rgba(255,255,255,.92)}
+    .quick-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}.quick-nav a{padding:9px 12px;border-radius:999px;background:rgba(255,250,241,.16);color:#fffaf1;text-decoration:none;border:1px solid rgba(255,255,255,.24);font-weight:700;font-size:13px}
+    main{max-width:1160px;margin:0 auto;padding:28px 18px 48px}.section{margin-top:22px;padding:26px;border-radius:var(--radius);background:rgba(255,250,241,.86);border:1px solid var(--line);box-shadow:var(--shadow)}
+    h2{font-family:Georgia,'Times New Roman',serif;font-size:31px;margin:0 0 14px;color:var(--olive-dark)}h3{font-family:Georgia,'Times New Roman',serif;font-size:22px;margin:0 0 8px;color:var(--olive-dark)}p{line-height:1.65;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid.two{grid-template-columns:repeat(2,1fr)}.box{padding:18px;border-radius:18px;background:#fffaf1;border:1px solid var(--line)}
+    .label{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--olive);font-weight:700;margin-bottom:7px}.value{font-size:16px;color:var(--text);line-height:1.55}.value strong{color:var(--text)}
+    .actions{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.btn{display:flex;align-items:center;justify-content:center;text-align:center;min-height:52px;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:700;color:white;background:linear-gradient(180deg,var(--olive),var(--olive-dark));box-shadow:0 10px 25px rgba(55,64,34,.16)}.btn.light{background:#fffaf1;color:var(--olive-dark);border:1px solid rgba(102,115,76,.22);box-shadow:none}.btn.sand{background:linear-gradient(180deg,#d4b27c,#a8824e);color:#2c261f}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery a{display:block}.gallery img{width:100%;height:230px;object-fit:cover;border-radius:18px;border:1px solid rgba(44,38,31,.12);box-shadow:0 8px 22px rgba(61,48,35,.12);transition:.18s}.gallery img:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(61,48,35,.18)}.access img{height:250px}
+    .list{display:grid;gap:12px;margin-top:8px}.item{padding:16px 18px;border-radius:18px;background:#fffaf1;border:1px solid var(--line);line-height:1.55;color:var(--muted)}.item strong{color:var(--text)}
+    .photo-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo-card{overflow:hidden;border-radius:22px;background:#fffaf1;border:1px solid var(--line);box-shadow:0 12px 28px rgba(61,48,35,.10);display:flex;flex-direction:column}.photo-card img{width:100%;height:190px;object-fit:cover;display:block;background:#f7f1e7}.photo-card .inner{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}.photo-card p{margin:0}.badge{display:inline-block;width:max-content;margin-bottom:3px;padding:5px 9px;border-radius:999px;background:rgba(102,115,76,.10);color:var(--olive-dark);font-size:12px;font-weight:700}.mini-link{display:inline-flex;align-items:center;justify-content:center;width:max-content;margin-top:auto;padding:9px 12px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:700;background:#fffaf1;color:var(--olive-dark);border:1px solid rgba(102,115,76,.22)}
+    .highlight{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}.highlight .photo-card img{height:230px}.qr{display:flex;gap:22px;align-items:center}.qr img{width:150px;height:150px;border-radius:18px;background:white;padding:10px;border:1px solid var(--line)}footer{text-align:center;padding:28px 18px;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.photo-cards{grid-template-columns:repeat(2,1fr)}.highlight{grid-template-columns:1fr}}
+    @media(max-width:760px){.hero{min-height:66vh;padding:16px}.hero-card{padding:24px 16px;border-radius:24px}h1{font-size:35px}.tagline{font-size:16px}.section{padding:20px}.grid,.grid.two,.actions,.gallery,.photo-cards{grid-template-columns:1fr}.gallery img,.access img{height:240px}.qr{display:block;text-align:center}.qr img{margin-bottom:12px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-card">
+      <p class="kicker">Séjour en Provence</p>
+      <h1>L'Échappée d'Eygalières</h1>
+      <p class="tagline">Votre appartement au cœur des Alpilles</p>
+      <nav class="quick-nav">
+        <a href="#acces">Accès</a><a href="#logement">Logement</a><a href="#tourisme">À découvrir</a><a href="#restaurants">Restaurants</a><a href="#qr">QR code</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="acces">
+      <h2>Bienvenue</h2>
+      <p>Cette page rassemble les informations utiles pour votre arrivée, votre séjour et vos découvertes autour d'Eygalières.</p>
+      <div class="grid">
+        <div class="box"><span class="label">Adresse</span><div class="value">54 avenue Lazare Kaspi<br>13810 Eygalières</div></div>
+        <div class="box"><span class="label">Arrivée</span><div class="value">À partir de 15h, ou dès que l'appartement est prêt.</div></div>
+        <div class="box"><span class="label">Départ</span><div class="value">Au plus tard à 11h le matin.</div></div>
+      </div>
+      <div class="actions">
+        <a class="btn sand" href="https://www.google.com/maps/search/?api=1&query=54%20avenue%20Lazare%20Kaspi%2013810%20Eygali%C3%A8res" target="_blank" rel="noopener noreferrer">📍 Ouvrir Google Maps</a>
+        <a class="btn" href="https://waze.com/ul?q=54%20avenue%20Lazare%20Kaspi%2013810%20Eygali%C3%A8res" target="_blank" rel="noopener noreferrer">🚗 Itinéraire Waze</a>
+        <a class="btn light" href="tel:0616145633">📞 Appeler Jordan</a>
+        <a class="btn light" href="https://wa.me/33616145633" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="section" id="logement">
+      <h2>Photos du logement</h2>
+      <p>Un appartement lumineux et confortable, pensé comme un pied-à-terre simple et élégant pour profiter d'Eygalières et des Alpilles.</p>
+      <div class="gallery">
+        <a href="assets/appartement/1. IMG_3709.jpeg" target="_blank"><img src="assets/appartement/1. IMG_3709.jpeg" alt="Photo de l'appartement"></a>
+        <a href="assets/appartement/2. IMG_3708.jpeg" target="_blank"><img src="assets/appartement/2. IMG_3708.jpeg" alt="Photo de l'appartement"></a>
+        <a href="assets/appartement/3. IMG_3864.jpeg" target="_blank"><img src="assets/appartement/3. IMG_3864.jpeg" alt="Photo de l'appartement"></a>
+        <a href="assets/appartement/4. IMG_3888.jpeg" target="_blank"><img src="assets/appartement/4. IMG_3888.jpeg" alt="Photo de l'appartement"></a>
+        <a href="assets/appartement/5. ChatGPT Image 6 juin 2026, 12_22_06.png" target="_blank"><img src="assets/appartement/5. ChatGPT Image 6 juin 2026, 12_22_06.png" alt="Salle de bain lumineuse"></a>
+        <a href="assets/appartement/6. ChatGPT Image 6 juin 2026, 12_24_28.png" target="_blank"><img src="assets/appartement/6. ChatGPT Image 6 juin 2026, 12_24_28.png" alt="Salle de bain lumineuse"></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Arrivée & informations pratiques</h2>
+      <div class="list">
+        <div class="item"><strong>Accès autonome :</strong> les informations d'arrivée, le code du coffre extérieur et le code Wi‑Fi vous sont communiqués personnellement avant votre séjour ou dès que l'appartement est prêt.</div>
+        <div class="item"><strong>Petite attention :</strong> des boissons, du café et du thé sont mis à votre disposition pour votre arrivée.</div>
+        <div class="item"><strong>Climatisation réversible :</strong> en cas de difficulté, envoyez-moi un message. Il est possible de régler la température et la puissance à distance.</div>
+        <div class="item"><strong>Stationnement :</strong> merci de ne pas vous garer dans le chemin d'entrée, celui-ci étant commun aux trois maisons.</div>
+      </div>
+    </section>
+
+    <section class="section access">
+      <h2>Photos d'accès</h2>
+      <p>Ces photos vous aideront à repérer l'entrée et le cheminement jusqu'à l'appartement.</p>
+      <div class="gallery">
+        <a href="assets/acces/IMG_7476.PNG" target="_blank"><img src="assets/acces/IMG_7476.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7477.PNG" target="_blank"><img src="assets/acces/IMG_7477.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7478.PNG" target="_blank"><img src="assets/acces/IMG_7478.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7479.PNG" target="_blank"><img src="assets/acces/IMG_7479.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7480.PNG" target="_blank"><img src="assets/acces/IMG_7480.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7481.PNG" target="_blank"><img src="assets/acces/IMG_7481.PNG" alt="Photo d'accès à l'appartement"></a>
+        <a href="assets/acces/IMG_7483.PNG" target="_blank"><img src="assets/acces/IMG_7483.PNG" alt="Photo d'accès à l'appartement"></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Quelques consignes</h2>
+      <div class="list">
+        <div class="item">Merci de bien fermer le rideau pendant les douches : le parquet au sol est fragile.</div>
+        <div class="item">Merci de ne pas laisser le tapis de bain totalement trempé sur le sol.</div>
+        <div class="item">Éviter les produits corrosifs et la laque devant le grand miroir de la pièce à vivre.</div>
+        <div class="item">Pour fermer le volet de la chambre, il convient de le soulever légèrement en s'appuyant sur les verrous du volet.</div>
+      </div>
+    </section>
+
+    <section class="section" id="tourisme">
+      <h2>À découvrir autour d'Eygalières</h2>
+      <p>Quelques idées pour profiter pleinement du séjour : villages, patrimoine, balades, marchés et expériences typiques des Alpilles.</p>
+      <div class="photo-cards">
+        <article class="photo-card"><img src="assets/guide/randonnee-alpilles.jpg" alt="Randonnées dans les Alpilles"><div class="inner"><span class="badge">Nature</span><h3>Randonnées des Alpilles</h3><p>Itinéraires, niveaux et conseils pour marcher dans le massif.</p><a class="mini-link" href="https://www.alpillesenprovence.com/randonnees/" target="_blank" rel="noopener noreferrer">Voir les randonnées</a></div></article>
+        <article class="photo-card"><img src="assets/guide/eygalieres-alentours.webp" alt="Villages des Alpilles"><div class="inner"><span class="badge">Villages</span><h3>Eygalières & alentours</h3><p>Vieux village, ruelles, points de vue, Saint-Rémy, Les Baux et Maussane.</p><a class="mini-link" href="https://www.alpillesenprovence.com/decouvrir-les-alpilles/nos-villages/eygalieres/" target="_blank" rel="noopener noreferrer">Découvrir</a></div></article>
+        <article class="photo-card"><img src="assets/guide/carrieres-lumieres.webp" alt="Carrières de Lumières"><div class="inner"><span class="badge">Culture</span><h3>Carrières de Lumières</h3><p>Un lieu spectaculaire aux Baux-de-Provence pour une sortie culturelle marquante.</p><a class="mini-link" href="https://www.carrieres-lumieres.com/" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/guide/marche-provence.webp" alt="Marchés provençaux"><div class="inner"><span class="badge">Provence</span><h3>Marchés & produits locaux</h3><p>Profitez des marchés provençaux, huiles d'olive, vins, fruits et produits du terroir.</p><a class="mini-link" href="https://www.alpillesenprovence.com/" target="_blank" rel="noopener noreferrer">Office de tourisme</a></div></article>
+        <article class="photo-card"><img src="assets/hero.jpg" alt="Eygalières au coucher du soleil"><div class="inner"><span class="badge">Coup de cœur</span><h3>Coucher de soleil</h3><p>Montez dans le vieux village pour profiter des vues sur les Alpilles en fin de journée.</p></div></article>
+        <article class="photo-card"><img src="assets/guide/chapelle-saint-sixte.webp" alt="Chapelle Saint-Sixte"><div class="inner"><span class="badge">Patrimoine</span><h3>Chapelle Saint-Sixte</h3><p>Un emblème d'Eygalières, parfait pour une balade courte et de belles photos.</p></div></article>
+      </div>
+      <div class="actions">
+        <a class="btn light" href="https://www.alpillesenprovence.com/nos-brochures-et-circuits/" target="_blank" rel="noopener noreferrer">🗺️ Brochures & circuits</a>
+        <a class="btn light" href="https://www.mairieeygalieres.com/les-chemins-de-grande-randonnee-gr/" target="_blank" rel="noopener noreferrer">🥾 GR autour d'Eygalières</a>
+      </div>
+    </section>
+
+    <section class="section" id="restaurants">
+      <h2>Restaurants & bonnes adresses</h2>
+      <p>Voici quelques adresses recommandées à Eygalières et dans les Alpilles. Pensez à réserver, notamment en saison.</p>
+      <div class="photo-cards">
+        <article class="photo-card"><img src="assets/restaurants/chez-paulette.webp" alt="Chez Paulette à Eygalières"><div class="inner"><span class="badge">Cuisine traditionnelle</span><h3>Chez Paulette</h3><p>Une adresse conviviale de cuisine traditionnelle, idéale pour un repas simple, authentique et chaleureux dans le village.</p><a class="mini-link" href="https://www.google.com/search?q=Chez+Paulette+Eygali%C3%A8res" target="_blank" rel="noopener noreferrer">Rechercher</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/karine.jpg" alt="Restaurant Karine à Eygalières"><div class="inner"><span class="badge">Italie</span><h3>Restaurant Karine</h3><p>Restaurant italien apprécié à Eygalières, parfait pour une cuisine généreuse et ensoleillée. Également pratique pour les pizzas.</p><a class="mini-link" href="https://restaurantkarine.fr/" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/le-progres.webp" alt="Restaurant Le Progrès à Eygalières"><div class="inner"><span class="badge">Village</span><h3>Le Progrès</h3><p>Une belle adresse au cœur du village pour profiter de l'ambiance d'Eygalières.</p><a class="mini-link" href="https://www.instagram.com/leprogres.eygalieres?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">Voir Instagram</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/aubergine.jpg" alt="Restaurant L'Aubergine à Eygalières"><div class="inner"><span class="badge">Dîner au village</span><h3>L'Aubergine</h3><p>Une belle option pour un déjeuner ou un dîner dans le village, dans une atmosphère agréable.</p><a class="mini-link" href="https://www.google.com/search?q=L%27Aubergine+Eygali%C3%A8res" target="_blank" rel="noopener noreferrer">Rechercher</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/karine-pizza.webp" alt="Pizza chez Karine"><div class="inner"><span class="badge">Pizza</span><h3>Pizza chez Karine</h3><p>Une solution pratique pour commander des pizzas à emporter à Eygalières.</p><a class="mini-link" href="https://restaurantkarine.fr/" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/la-rotonda.webp" alt="Pizzeria La Rotonda à Orgon"><div class="inner"><span class="badge">Livraison possible</span><h3>La Rotonda – Orgon</h3><p>Pizzeria située à Orgon, avec possibilité de livraison selon disponibilités.</p><a class="mini-link" href="https://www.google.com/search?q=La+Rotonda+Orgon+pizza" target="_blank" rel="noopener noreferrer">Rechercher</a></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tables d'exception dans les Alpilles</h2>
+      <p>Pour un moment gastronomique, les Alpilles offrent plusieurs maisons remarquables autour des Baux-de-Provence.</p>
+      <div class="photo-cards">
+        <article class="photo-card"><img src="assets/restaurants/la-cabro-dor.jpg" alt="La Cabro d'Or Baumanière"><div class="inner"><span class="badge">Baumanière</span><h3>La Cabro d'Or</h3><p>Restaurant du domaine Baumanière, dans un cadre merveilleux. Une cuisine provençale raffinée et somptueuse, qui mérite largement le détour.</p><a class="mini-link" href="https://www.baumaniere.com/fr/gastronomie/la-cabro-dor/" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/baumaniere.jpg" alt="L'Oustau de Baumanière"><div class="inner"><span class="badge">Restaurant 3 étoiles</span><h3>L'Oustau de Baumanière</h3><p>Table d'excellence du chef Glenn Viel, au sein du domaine Baumanière. Une expérience gastronomique d'exception dans un lieu emblématique.</p><a class="mini-link" href="https://www.baumaniere.com/fr/gastronomie/loustau-de-baumaniere/" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/aupiho.jpg" alt="L'Aupiho Domaine de Manville"><div class="inner"><span class="badge">Restaurant étoilé</span><h3>L'Aupiho</h3><p>Restaurant gastronomique étoilé du Domaine de Manville. Une cuisine élégante, inspirée par les Alpilles et les produits du terroir.</p><a class="mini-link" href="https://www.domainedemanville.fr/s-attabler/restaurant-laupiho" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/bistrot-manville.jpg" alt="Bistrot de Manville"><div class="inner"><span class="badge">Bistrot chic</span><h3>Le Bistrot de l'Aupiho</h3><p>Une alternative plus décontractée, tout en restant très qualitative, pour profiter du cadre du Domaine de Manville.</p><a class="mini-link" href="https://www.domainedemanville.fr/s-attabler/le-bistrot-de-laupiho" target="_blank" rel="noopener noreferrer">Voir le site</a></div></article>
+        <article class="photo-card"><img src="assets/restaurants/bar-domaine-manville.jpeg" alt="Bar du Domaine de Manville"><div class="inner"><span class="badge">Moment détente</span><h3>Bar du Domaine de Manville</h3><p>Possibilité d'y aller simplement pour prendre un verre, profiter de la magnifique cour intérieure ou goûter les pâtisseries du chef pâtissier.</p><a class="mini-link" href="https://www.domainedemanville.fr/s-attabler/le-bar" target="_blank" rel="noopener noreferrer">Voir le bar</a></div></article>
+        <article class="photo-card"><img src="assets/guide/baux-de-provence.jpg" alt="Les Baux-de-Provence"><div class="inner"><span class="badge">À combiner</span><h3>Les Baux-de-Provence</h3><p>Une belle idée de sortie : village des Baux, Carrières de Lumières, puis verre ou dîner dans un domaine.</p><a class="mini-link" href="https://www.lesbauxdeprovence.com/" target="_blank" rel="noopener noreferrer">Découvrir</a></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="qr">
+      <h2>QR code</h2>
+      <div class="qr">
+        <img src="assets/qr-code.png" alt="QR code de la page L'Échappée d'Eygalières">
+        <p>Scannez ce QR code pour retrouver facilement cette page pendant votre séjour : accès, itinéraire, consignes, téléphone, randonnées, restaurants et office de tourisme.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>L'Échappée d'Eygalières · 54 avenue Lazare Kaspi · 13810 Eygalières</footer>
+</body>
+</html>
